@@ -1,0 +1,34 @@
+:root {
+    /* Primary Colors 主色*/
+    --primary: #10936E;
+    --primary-dark: #1E7854;
+
+    /* Secondary Colors 配用色*/
+    --secondary-dark: #D4AF37;
+
+    /* Icon用色 */
+    --icon-original: #000000;
+
+    /* 灰階 */
+    --gray-900-ebony: #212121;
+    --gray-850: #2D2D2D;
+    --gray-800-charcoal: #333333;
+    --gray-700-graphite: #494949;
+    --gray-600-slate: #757575;
+    --gray-500-dark-gray: #4F4F4F;
+    --gray-400-dim-gray: #696969;
+    --gray-300-gray: #808080;
+    --gray-200-light-gray: #D3D3D3;
+    --gray-100-gainsboro: #DCDCDC;
+    /* 灰階 中灰透明度*/
+    --gray-5: rgb(128 128 128 / 5%);
+        --gray-10: rgb(128 128 128 / 10%);
+        --gray-15: rgb(128 128 128 / 15%);
+        --gray-20: rgb(128 128 128 / 20%);
+        --gray-30: rgb(128 128 128 / 30%);
+        --gray-45: rgb(128 128 128 / 45%);
+        --gray-60: rgb(128 128 128 / 60%);
+        --gray-75: rgb(128 128 128 / 75%);
+        --gray-90: rgb(128 128 128 / 90%);
+        --gray-100: rgb(128 128 128);
+}

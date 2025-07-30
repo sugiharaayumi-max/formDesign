@@ -1,0 +1,78 @@
+@charset "utf-8";
+:root {
+    --font-family-default: "Inter", "Noto Sans TC", "Helvetica Neue", Helvetica, "PingFang TC", "Microsoft JhengHei", sans-serif;
+    --Success-Green:#28C76F;
+    --Error-Red:#EA5455;
+}
+html {
+    font-size: 16px;
+    /* 預設值，通常可不用寫 */
+}
+
+body{
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: var(--font-family-default);
+}
+
+.dark {
+    background-color: #0c0c0c;
+    color: #ffffff;
+}
+.light {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+
+html.standard_form.dark input.form-control {
+    display: block;
+    border-radius: 0.5rem;
+    border: none;
+    color: white;
+    background-color: rgb(255 255 255 / 9%) ;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+html.standard_form.dark input.form-control:disabled {
+    background-color: rgb(0 0 0 / 5%);
+    color: rgb(255 255 255 / 18%);
+}
+/* 表單排版 horizontal 橫式排版 */
+.horziontal_form {
+    width: 600px;
+    margin: 0 auto;
+    background-color: var(--gray-5);
+    border-radius: 24px;
+    padding: 1rem 1.725rem;
+}
+.horziontal_form .form-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: .725rem;
+}
+.horziontal_form .form-item label.form-label {
+    width: 20%;
+    min-width: 80px;
+    /* 保底寬度，防止太窄 */
+    font-weight: bold;
+    text-align: right;
+    padding: .375rem .75rem 0 0;
+}
+.horziontal_form .form-item .input-group{
+    flex: 1;
+    /* 撐滿剩餘空間 */
+    display: flex;
+    flex-direction: column;
+}
+
+.horziontal_form .form-item .input-message{
+    font-size: 0.75rem;
+    margin-top: 0.325rem;
+}
+.horziontal_form .form-item .input-message.is-error{
+    color: var(--Error-Red);
+}
