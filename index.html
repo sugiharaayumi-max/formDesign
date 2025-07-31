@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="dark standard_form">
+<html lang="en" class="standard_form">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,33 +13,98 @@
     <title>表單樣式建置</title>
 </head>
 <body class="dark">
-    testx9
-    <ul>
-        <li>基本input輸入樣式</li>
-        <li>2</li>
-        <li>3</li>
-    </ul>
-    <div class="horziontal_form ">
+    testx233
+    <div class="horziontal_form form_wrapper">
+        <form action="">
+            <span>有輸入框提示</span>
+
+            <div class="form-item">
+                <label for="userName" class="form-label">用户名:</label>
+                <div class="input-group has-feedback">
+                    <input type="text" class="custom-form" id="userName" disabled  value="devarttest03">
+                    <div class="input-message is-error">*用户名不允许更改</div>
+                </div>
+            </div>
+            <div class="form-item">
+                <label for="fr_gender" class="form-label">称呼:</label>
+                <div class="input-group has-feedback">
+                    <select id="fr_gender" class="custom-form">
+                        <option>-</option>
+                        <option value="0">先生</option>
+                        <option value="1">女士</option>
+                    </select>
+                    <div class="input-message is-error">* 修改 称呼 请联系在线客服</div>
+                </div>
+            </div>
+            <div class="form-item">
+                <label for="fr_gender_disable" class="form-label">禁用狀態:</label>
+                <div class="input-group has-feedback">
+                    <select id="fr_gender_disable" disabled class="custom-form">
+                        <option>-</option>
+                        <option value="0">先生</option>
+                        <option value="1">女士</option>
+                    </select>
+                    <div class="input-message is-error">* 修改 称呼 请联系在线客服</div>
+                </div>
+            </div>
+            <div class="form-item">
+                <label for="phone_number" class="form-label">联系电话:</label>
+                <div class="input-group has-feedback">
+                    <div class="form-item">
+                        <select id="phone_number" disabled class="custom-form">
+                            <option value="1">+86</option>
+                            <option value="3">+84</option>
+                            <option value="6">+60</option>
+                        </select>
+                        <input type="text" disabled class="custom-form" value="123*****444">
+                    </div>
+                    <div class="input-message is-error">* 修改 称呼 请联系在线客服</div>
+                </div>
+            </div>
+            <div class="form-item">
+                <label for="" class="form-label"></label>
+                <div class="input-group">
+                    <input type="submit" class=""  value="确认并提交">
+                </div>
+            </div>
+            <div class="form-item">
+                <label for="" class="form-label"></label>
+                <div class="input-group">
+                    <input type="submit" class="" value="确认并提交">
+                </div>
+            </div>
+
+
+        </form>
+    </div>
+    <div class="horziontal_form form_wrapper">
         <form action="">
             <span>有輸入框提示</span>
             <div class="form-item">
+                <label for="filled" class="form-label">姓名</label>
+                <div class="input-group has-feedback">
+                    <input type="text" class="custom-form" id="filled" value="有預設參數">
+                    <div class="input-message is-success">格式正確</div>
+                </div>
+            </div>
+            <div class="form-item">
                 <label for="firstName" class="form-label">姓名</label>
                 <div class="input-group has-feedback">
-                    <input type="text" class="form-control" id="firstName" placeholder="輸入框提示" value="">
+                    <input type="text" class="custom-form" id="firstName" placeholder="輸入框提示" value="">
                     <!-- <div class="input-message is-error">修改 姓名 请联系在线客服</div> -->
                 </div>
             </div>
             <div class="form-item">
                 <label for="fr_old_password" class="form-label">旧密码</label>
                 <div class="input-group has-feedback">
-                    <input type="password" class="form-control" id="fr_old_password" placeholder="请输入您现在的密码" value="">
-                    <div class="input-message is-error">修改 姓名 请联系在线客服</div>
+                    <input type="password" class="custom-form" id="fr_old_password" placeholder="密码必须包含 数字, 小写字母, 大写字母 , 至少 6 个字符" value="">
+                    <div class="input-message is-error">密碼暫不開放修改</div>
                 </div>
             </div>
             <div class="form-item">
                 <label for="fr_old_password" class="form-label">輸入框禁用狀態:</label>
                 <div class="input-group has-feedback">
-                    <input type="text" class="form-control" id="fr_old_password" disabled value="devarttest03">
+                    <input type="text" class="custom-form" id="fr_old_password" disabled value="devarttest03">
                     <div class="input-message is-error">修改 姓名 请联系在线客服</div>
                 </div>
             </div>

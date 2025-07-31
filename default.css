@@ -16,7 +16,7 @@ body{
 }
 
 .dark {
-    background-color: #0c0c0c;
+    background-color: #121212;
     color: #ffffff;
 }
 .light {
@@ -25,28 +25,76 @@ body{
 }
 
 
-html.standard_form.dark input.form-control {
+.custom-form {
     display: block;
     border-radius: 0.5rem;
     border: none;
     color: white;
-    background-color: rgb(255 255 255 / 9%) ;
+    background-color: rgb(var(--gray-500-dark-gray-rgb), .3);
+    color: rgb(var(--gray-200-light-gray-rgb), 1);
     padding: .375rem .75rem;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
 }
-html.standard_form.dark input.form-control:disabled {
-    background-color: rgb(0 0 0 / 5%);
-    color: rgb(255 255 255 / 18%);
+
+.custom-form:focus {
+    outline: none;
+    background-color: rgb(var(--gray-300-gray-rgb), .6);
+    color: rgb(var(--gray-white-rgb), .6);
+    box-shadow: 0 0 0 2px var(--primary-light);
 }
+.custom-form::placeholder{
+    color: rgb(var(--gray-300-gray-rgb), 1);
+    font-weight: 500;
+    font-size: .725rem ;
+}
+.custom-form:disabled {
+    background-color: rgb(var(--gray-900-ebony-rgb), .6);
+    color: rgb(var(--gray-700-graphite-rgb), 1);
+}
+
+select.custom-form {
+    appearance: none;
+    /* 隱藏原生箭頭 */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding-right: 2.5rem;
+    /* 預留箭頭空間 */
+    background-image: url("data:image/svg+xml,%3Csvg fill='white' height='16' viewBox='0 0 24 24' width='16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 1rem;
+    color: white;
+    border-radius: 0.5rem;
+    border: none;
+}
+.custom-form+.custom-form{
+    margin-left: .725rem;
+}
+select.custom-form option,
+select.custom-form option:not(:checked){
+    background-color: rgb(var(--gray-700-graphite-rgb), 1);
+    color: rgb(var(--gray-200-light-gray-rgb), 1);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+
+
+
 /* 表單排版 horizontal 橫式排版 */
+.form_wrapper {
+    background-color: rgb(var(--gray-800-charcoal-rgb), 0.075);
+    border-radius: 24px;
+
+}
 .horziontal_form {
     width: 600px;
-    margin: 0 auto;
-    background-color: var(--gray-5);
-    border-radius: 24px;
-    padding: 1rem 1.725rem;
+    margin: 1.5rem auto;
+    padding: 3.725rem;
 }
 .horziontal_form .form-item {
     display: flex;
@@ -76,3 +124,7 @@ html.standard_form.dark input.form-control:disabled {
 .horziontal_form .form-item .input-message.is-error{
     color: var(--Error-Red);
 }
+.horziontal_form .form-item .input-message.is-success{
+    color: var(--Success-Green);
+}
+

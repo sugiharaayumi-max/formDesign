@@ -1,34 +1,53 @@
 :root {
     /* Primary Colors 主色*/
     --primary: #10936E;
-    --primary-dark: #1E7854;
+    --primary-rgb: 16, 147, 110;
+    --primary-rgba-100: rgba(var(--primary-rgb), 1);
+    --primary-rgba-90: rgba(var(--primary-rgb), 0.9);
+    --primary-rgba-80: rgba(var(--primary-rgb), 0.8);
+    --primary-rgba-70: rgba(var(--primary-rgb), 0.7);
+    --primary-rgba-60: rgba(var(--primary-rgb), 0.6);
+    --primary-rgba-50: rgba(var(--primary-rgb), 0.5);
+    --primary-rgba-40: rgba(var(--primary-rgb), 0.4);
+    --primary-rgba-30: rgba(var(--primary-rgb), 0.3);
+    --primary-rgba-20: rgba(var(--primary-rgb), 0.2);
+    --primary-rgba-10: rgba(var(--primary-rgb), 0.1);
+    --primary-rgba-05: rgba(var(--primary-rgb), 0.05);
+    --primary-light: #3FB790;
+    --primary-dark: #0B6D56;
 
     /* Secondary Colors 配用色*/
-    --secondary-dark: #D4AF37;
+    --secondary: #D4AF37;
+    --secondary-light: #E5C95D;
+    --secondary-dark: #9C8329;
 
     /* Icon用色 */
     --icon-original: #000000;
 
-    /* 灰階 */
+    --gray-white: #FFFFFF;
+    --gray-white-rgb: 255, 255, 255;
+    --gray-black: #000000;
+    --gray-black-rgb: 0, 0, 0;
+
     --gray-900-ebony: #212121;
+    --gray-900-ebony-rgb: 33, 33, 33;
     --gray-850: #2D2D2D;
+    --gray-850-rgb: 45, 45, 45;
     --gray-800-charcoal: #333333;
+    --gray-800-charcoal-rgb: 51, 51, 51;
     --gray-700-graphite: #494949;
+    --gray-700-graphite-rgb: 73, 73, 73;
     --gray-600-slate: #757575;
+    --gray-600-slate-rgb: 117, 117, 117;
     --gray-500-dark-gray: #4F4F4F;
+    --gray-500-dark-gray-rgb: 79, 79, 79;
     --gray-400-dim-gray: #696969;
+    --gray-400-dim-gray-rgb: 105, 105, 105;
     --gray-300-gray: #808080;
+    --gray-300-gray-rgb: 128, 128, 128;
     --gray-200-light-gray: #D3D3D3;
+    --gray-200-light-gray-rgb: 211, 211, 211;
     --gray-100-gainsboro: #DCDCDC;
-    /* 灰階 中灰透明度*/
-    --gray-5: rgb(128 128 128 / 5%);
-        --gray-10: rgb(128 128 128 / 10%);
-        --gray-15: rgb(128 128 128 / 15%);
-        --gray-20: rgb(128 128 128 / 20%);
-        --gray-30: rgb(128 128 128 / 30%);
-        --gray-45: rgb(128 128 128 / 45%);
-        --gray-60: rgb(128 128 128 / 60%);
-        --gray-75: rgb(128 128 128 / 75%);
-        --gray-90: rgb(128 128 128 / 90%);
-        --gray-100: rgb(128 128 128);
+    --gray-100-gainsboro-rgb: 220, 220, 220;
+
 }
