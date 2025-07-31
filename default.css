@@ -24,67 +24,6 @@ body{
     color: #000000;
 }
 
-
-.custom-form {
-    display: block;
-    border-radius: 0.5rem;
-    border: none;
-    color: white;
-    background-color: rgb(var(--gray-500-dark-gray-rgb), .3);
-    color: rgb(var(--gray-200-light-gray-rgb), 1);
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-}
-
-.custom-form:focus {
-    outline: none;
-    background-color: rgb(var(--gray-300-gray-rgb), .6);
-    color: rgb(var(--gray-white-rgb), .6);
-    box-shadow: 0 0 0 2px var(--primary-light);
-}
-.custom-form::placeholder{
-    color: rgb(var(--gray-300-gray-rgb), 1);
-    font-weight: 500;
-    font-size: .725rem ;
-}
-.custom-form:disabled {
-    background-color: rgb(var(--gray-900-ebony-rgb), .6);
-    color: rgb(var(--gray-700-graphite-rgb), 1);
-}
-
-select.custom-form {
-    appearance: none;
-    /* 隱藏原生箭頭 */
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    padding-right: 2.5rem;
-    /* 預留箭頭空間 */
-    background-image: url("data:image/svg+xml,%3Csvg fill='white' height='16' viewBox='0 0 24 24' width='16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: right 0.75rem center;
-    background-size: 1rem;
-    color: white;
-    border-radius: 0.5rem;
-    border: none;
-}
-.custom-form+.custom-form{
-    margin-left: .725rem;
-}
-select.custom-form option,
-select.custom-form option:not(:checked){
-    background-color: rgb(var(--gray-700-graphite-rgb), 1);
-    color: rgb(var(--gray-200-light-gray-rgb), 1);
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-}
-
-
-
-
 /* 表單排版 horizontal 橫式排版 */
 .form_wrapper {
     background-color: rgb(var(--gray-800-charcoal-rgb), 0.075);
@@ -126,5 +65,200 @@ select.custom-form option:not(:checked){
 }
 .horziontal_form .form-item .input-message.is-success{
     color: var(--Success-Green);
+}
+
+.custom-form {
+    display: block;
+    border-radius: 0.5rem;
+    border: none;
+    color: white;
+    background-color: rgb(var(--gray-500-dark-gray-rgb), .3);
+    color: rgb(var(--gray-200-light-gray-rgb), 1);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    height: 40px;
+    box-sizing: border-box;
+    transition: box-shadow .24s cubic-bezier(.4, 0, .2, 1);
+}
+
+.custom-form:focus {
+    outline: none;
+    background-color: rgb(var(--gray-300-gray-rgb), .6);
+    color: rgb(var(--gray-white-rgb), .6);
+    /* box-shadow: 0 0 0 2px var(--btn-color-primary-hover), 0px 0px 5px 2px var(--btn-color-primary-hover); */
+    border-bottom: 3px solid #f6c525;
+}
+
+.custom-form::placeholder {
+    color: rgb(var(--gray-300-gray-rgb), 1);
+    font-weight: 500;
+    font-size: .725rem;
+}
+
+.custom-form:disabled {
+    background-color: rgb(var(--gray-900-ebony-rgb), .6);
+    color: rgb(var(--gray-700-graphite-rgb), 1);
+}
+
+select.custom-form {
+    appearance: none;
+    /* 隱藏原生箭頭 */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: .375rem 2.5rem .375rem .75rem;
+    /* 預留箭頭空間 */
+    background-image: url("data:image/svg+xml,%3Csvg fill='white' height='16' viewBox='0 0 24 24' width='16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 1rem;
+    color: white;
+    border-radius: 0.5rem;
+    border: none;
+
+}
+
+.custom-form+.custom-form {
+    margin-left: .725rem;
+}
+
+select.custom-form option,
+select.custom-form option:not(:checked) {
+    background-color: rgb(var(--gray-700-graphite-rgb), 1);
+    color: rgb(var(--gray-200-light-gray-rgb), 1);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2.3;
+}
+
+/* button樣式 */
+.custom-btn {
+    cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    position: relative;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    overflow: hidden;
+    background-color: var(--btn-color-primary);
+    color: rgb(var(--gray-500-dark-gray-rgb), 1);
+    border: 1px solid transparent;
+    padding: 0.1rem;
+    font-size: 1rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+
+.custom-btn:hover,
+.custom-btn:active {
+    background-color: var(--btn-color-primary-hover);
+    color: rgb(var(--gray-500-dark-gray-rgb), 1);
+}
+.custom-btn:focus {
+    /* box-shadow: 0px 1px 3px 2px #b18e697a; */
+    border-bottom: 3px solid var(--secondary-dark);
+    outline: none;
+
+    /* 確保不會有預設藍色線 */
+}
+
+
+
+.gradient-outline-btn {
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    display: inline-block;
+    width: 240px;
+    height: 40px;
+    position: relative;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    overflow: hidden;
+    background-color: var(--btn-color-primary);
+    color: rgba(var(--gray-800-charcoal-rgb),1);
+    border: none;
+    padding: 2px;
+    font-size: 1rem;
+    transition: color .18s cubic-bezier(.4, 0, .2, 1), background-color .18s cubic-bezier(.4, 0, .2, 1), box-shadow .24s cubic-bezier(.4, 0, .2, 1);
+    box-shadow: 0 1px 6px 0 rgba(255, 215, 0, 0.08);
+}
+
+.gradient-outline-btn span {
+    position: relative;
+    z-index: 2;
+    padding: 0 1.8rem;
+    background-color: inherit;
+    color: inherit;
+    border-radius: 0.43rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 100%;
+    font-weight: bold;
+    letter-spacing: 0.04em;
+    transition: background-color .20s cubic-bezier(.4, 0, .2, 1), color .16s cubic-bezier(.4, 0, .2, 1);
+}
+.gradient-outline-btn:hover {
+    background-color: var(--btn-color-primary-hover);
+    color: rgba(var(--gray-800-charcoal-rgb), 0.6);
+    box-shadow: 0 4px 16px 0 rgba(255,215,0,0.11), 0 2px 8px 0 rgba(255,219,112,0.14);
+}
+.gradient-outline-btn:hover span {
+    background-color:inherit;
+    color: inherit;
+}
+
+.gradient-outline-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    border-radius: 0.5rem;
+    background: linear-gradient(115deg, #fffbe6 0%, #ffe066 20%, #ffd700 45%, #ffb700 75%, #ffea70 100%);
+    background-size: 50% 100%;
+    z-index: 1;
+    filter: blur(1px) brightness(1.07);
+    opacity: 0.9;
+    transition: filter .24s cubic-bezier(.4, 0, .2, 1), opacity .18s cubic-bezier(.4, 0, .2, 1);
+}
+.gradient-outline-btn:focus {
+    box-shadow: 0 0 0 2px var(--btn-color-primary-hover), 0px 0px 5px 2px var(--btn-color-primary-hover);
+    outline: none;
+    /* 確保不會有預設藍色線 */
+}
+
+.gradient-outline-btn:hover::before,
+.gradient-outline-btn:focus::before,
+.gradient-outline-btn:active::before {
+    animation: goldOutlineSlide 1.6s cubic-bezier(.4, 0, .2, 1) infinite;
+    filter: blur(0.4px) brightness(1.14);
+    opacity: 1;
+}
+
+@keyframes goldOutlineSlide {
+    to {
+        transform: translateX(-50%);
+    }
 }
 

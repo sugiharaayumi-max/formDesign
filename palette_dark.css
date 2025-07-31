@@ -21,6 +21,17 @@
     --secondary-light: #E5C95D;
     --secondary-dark: #9C8329;
 
+    /* Button用色 */
+    --btn-color-primary: #F6C525;
+    --btn-color-primary-hover: #F8D215;
+    --btn-color-primary-active: #DDB73C;
+
+    /* form的focus狀態 */
+    --focus-color: #7db4ff;
+    --focus-color-box-shadow: #bbe1ffcc;
+
+
+
     /* Icon用色 */
     --icon-original: #000000;
 
